@@ -1,0 +1,21 @@
+# Project exclude paths
+/.gradle/
+/facebookSDK/build/intermediates/bundles/
+/facebookSDK/build/intermediates/classes/
+/facebookSDK/build/intermediates/classes/debug/
+/facebookSDK/build/intermediates/incremental/
+/facebookSDK/build/intermediates/libs/
+/facebookSDK/build/intermediates/manifests/
+/facebookSDK/build/intermediates/res/
+/facebookSDK/build/intermediates/symbols/
+/facebookSDK/build/outputs/
+/facebookSDK/build/tmp/
+/magicMirrorv9/build/intermediates/classes/
+/magicMirrorv9/build/intermediates/dex/
+/magicMirrorv9/build/intermediates/incremental/
+/magicMirrorv9/build/intermediates/libs/
+/magicMirrorv9/build/intermediates/manifests/
+/magicMirrorv9/build/intermediates/pre-dexed/
+/magicMirrorv9/build/intermediates/res/
+/magicMirrorv9/build/intermediates/symbols/
+/magicMirrorv9/build/outputs/

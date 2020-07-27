@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/main_util"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+        android:id="@+id/layCam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@+id/cameraSurface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <com.cleverpixel.magicmirror.CustomView
+            android:id="@+id/myCustomView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/LayTake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ibTake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:src="@drawable/take" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ibFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:src="@drawable/icofb" />
+
+                <ImageButton
+                    android:id="@+id/ibSwitchCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:src="@drawable/camsw" />
+
+                <ImageButton
+                    android:id="@+id/ibPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:src="@drawable/pic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/RightMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:id="@+id/BtRightMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@null"
+                android:src="@drawable/menul" />
+
+            <LinearLayout
+                android:id="@+id/layZoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_vertical"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ibIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:background="@null"
+                    android:src="@drawable/zoomin" />
+
+                <ImageButton
+                    android:id="@+id/ibOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:src="@drawable/zoomout" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/layArrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3" >
+
+                <ImageButton
+                    android:id="@+id/ibTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="0"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/st" />
+
+                <ImageButton
+                    android:id="@+id/ibLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="left"
+                    android:layout_row="1"
+                    android:background="@null"
+                    android:src="@drawable/sl" />
+
+                <ImageButton
+                    android:id="@+id/ibRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:layout_row="1"
+                    android:background="@null"
+                    android:src="@drawable/sr" />
+
+                <ImageButton
+                    android:id="@+id/ibBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="2"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/sb" />
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LeftMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/laySliderFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ibFrameLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:src="@drawable/ibl" />
+
+                    <ImageSwitcher
+                        android:id="@+id/switchFrame"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha="100" >
+                    </ImageSwitcher>
+
+                    <ImageButton
+                        android:id="@+id/ibFrameRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:src="@drawable/ibr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/laySliderHair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ibHairLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:src="@drawable/ibl" />
+
+                    <ImageSwitcher
+                        android:id="@+id/switchHair"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha="100" >
+                    </ImageSwitcher>
+
+                    <ImageButton
+                        android:id="@+id/ibHairRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:src="@drawable/ibr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LayHairColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="32dp"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/BtLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@null"
+                android:src="@drawable/menur" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="D:\android\magicmirror10\magicMirrorv9\build\intermediates\pre-dexed\release\classes-928e2f60312134599eec781b17675e64284afafc.jar"
+        jar="D:\android\magicmirror10\magicMirrorv9\build\intermediates\exploded-aar\magicmirror10\facebookSDK\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4585bcc6130a17f3f34d26d11915730f685bd5a0"/>
+    <item
+        dex="D:\android\magicmirror10\magicMirrorv9\build\intermediates\pre-dexed\release\support-v4-19.1.0-07dec12500db8ef3b89533b990e0a56c41d92635.jar"
+        jar="D:\android\androidstudio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="D:\android\magicmirror10\magicMirrorv9\build\intermediates\pre-dexed\release\bolts-f578f6c06594f9625590871c3e3419d6a260a12c.jar"
+        jar="D:\android\magicmirror10\magicMirrorv9\build\intermediates\exploded-aar\magicmirror10\facebookSDK\unspecified\libs\bolts.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1e5ba33c837d05dcca9dc40a0ab458f8599d7aef"/>
+    <item
+        dex="D:\android\magicmirror10\magicMirrorv9\build\intermediates\pre-dexed\release\classes-cd49846686741ab6b1b02c1fb38ee4082961149d.jar"
+        jar="D:\android\magicmirror10\magicMirrorv9\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d71573c9c5ea98a8db47ad6ff993a63d492b3bfa"/>
+
+</pre-dex-items>

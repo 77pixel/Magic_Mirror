@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicMirrorv9/magicMirrorv9.iml" filepath="$PROJECT_DIR$/magicMirrorv9/magicMirrorv9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicmirror10.iml" filepath="$PROJECT_DIR$/magicmirror10.iml" />
+    </modules>
+  </component>
+</project>
+
